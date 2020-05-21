@@ -1,0 +1,4 @@
+page {
+	overflow: hidden;
+	background-color: #f8f8f8;
+}
