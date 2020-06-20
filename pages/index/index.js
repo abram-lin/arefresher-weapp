@@ -2,7 +2,8 @@ Page({
 	data: {
 		list: []
 	},
-	onLoad: function() {
+	onLoad: function () {
+		// 注意获取时机，等组件渲染完成后再获取，避免拿到的是null
 		this.arefresher = this.selectComponent('#arefresherid');
 		const list = this.getList(20, []);
 		this.setData({
